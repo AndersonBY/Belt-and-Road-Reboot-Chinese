@@ -1,0 +1,27 @@
+[project]
+authors = [
+  {name = "Anderson", email = "andersonby@163.com"},
+]
+dependencies = [
+  "mammoth>=1.6.0",
+  "python-docx>=1.1.0",
+  "markdown>=3.5.1",
+  "Pillow>=10.1.0",
+]
+description = ""
+license = {text = "MIT"}
+name = ""
+readme = "README.md"
+requires-python = ">=3.10"
+version = ""
+
+[project.optional-dependencies]
+playwright = [
+  "playwright",
+]
+
+[tool.pdm.scripts]
+format = "python format_report.py"
+html = "python markdown2html.py"
+image = "python html2image.py"
+pdf = "python html2pdf.py"
